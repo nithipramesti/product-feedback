@@ -1,0 +1,15 @@
+{
+    "version": 3,
+    "mappings": "AGAA,OAAO,CAAC,mFAAI",
+    "sources": [
+        "../sass/main.scss",
+        "../sass/abstracts/_variables.scss",
+        "../sass/base/_base.scss",
+        "../sass/base/_typography.scss",
+        "../sass/base/_utilities.scss",
+        "../sass/pages/_roadmap.scss",
+        "../sass/pages/_suggestion.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
