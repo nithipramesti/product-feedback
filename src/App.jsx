@@ -1,7 +1,12 @@
+import "./assets/styles/css/main.css";
+
+import Suggestion from "./pages/Suggestion";
+import FeedbackDetail from "./pages/FeedbackDetail";
+
 function App() {
   return (
     <div className="App">
-      <h1>Feedback App</h1>
+      <FeedbackDetail />
     </div>
   );
 }

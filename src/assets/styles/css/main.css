@@ -1,2 +1,235 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+:root {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  background-color: #f7f8fd;
+}
+
+body .container {
+  width: 1200px;
+  margin: 94px auto;
+}
+
+body .grid-12 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+}
+
+body .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .flex-space-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .flex-center-hrz {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .flex-top-hrz {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+body .rounded-corner {
+  border-radius: 10px;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+span {
+  color: #3a4374;
+}
+
+h2 {
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+h3 {
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.text-light {
+  color: #ffffff;
+}
+
+.btn {
+  padding: 12.5px 25px;
+  border: none;
+  border-radius: 10px;
+}
+
+.btn-primary {
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #ad1fea;
+  color: #ffffff;
+}
+
+.suggestion-page .side-bar {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+}
+
+.suggestion-page .side-bar .title {
+  padding: 24px;
+  padding-top: 62px;
+  margin-bottom: 24px;
+  background-color: #ad1fea;
+}
+
+.suggestion-page .side-bar .filter-container {
+  padding: 24px;
+  padding-bottom: 10px;
+  margin-bottom: 24px;
+  background-color: #ffffff;
+}
+
+.suggestion-page .side-bar .filter-container .filter-category {
+  font-size: 13px;
+  font-weight: bold;
+  color: #4661e6;
+  display: inline-block;
+  padding: 8px 16px;
+  margin-bottom: 14px;
+  border-radius: 10px;
+  background-color: #f2f4ff;
+  cursor: pointer;
+}
+
+.suggestion-page .side-bar .filter-container .filter-category ~ .filter-category {
+  margin-right: 8px;
+}
+
+.suggestion-page .side-bar .filter-container .filter-category:nth-child(1) {
+  margin-right: 8px;
+}
+
+.suggestion-page .side-bar .filter-container .filter-active {
+  background-color: #4661e6;
+  color: #ffffff;
+}
+
+.suggestion-page .side-bar .roadmap-container {
+  padding: 24px;
+  padding-bottom: 10px;
+  margin-bottom: 24px;
+  background-color: #ffffff;
+}
+
+.suggestion-page .side-bar .roadmap-container h3 {
+  margin-bottom: 24px;
+}
+
+.suggestion-page .side-bar .roadmap-container .roadmap-status .status {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.suggestion-page .side-bar .roadmap-container .roadmap-status .status .status-counter {
+  font-weight: bold;
+}
+
+.suggestion-page .side-bar .roadmap-container .roadmap-status .status ~ .status {
+  margin-top: 8px;
+}
+
+.suggestion-page main {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 9;
+  grid-column: 4/13;
+}
+
+.suggestion-page main .top-bar {
+  width: 100%;
+  padding: 14px 16px;
+  margin-bottom: 24px;
+  background-color: #373f68;
+}
+
+.suggestion-page main .top-bar h3 {
+  margin-right: 38px;
+  margin-bottom: 0;
+}
+
+.suggestion-page main .top-bar .sort-by-container {
+  font-size: 14px;
+}
+
+.suggestion-page main .top-bar .sort-by-container label {
+  margin-right: 2px;
+}
+
+.suggestion-page main .top-bar .sort-by-container select {
+  border: none;
+  padding: 0;
+  font-weight: bold;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.suggestion-page main .feedback-container .feedback {
+  padding: 28px 32px;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+}
+
+.suggestion-page main .feedback-container .feedback .upvotes {
+  font-size: 13px;
+  font-weight: bold;
+  color: #3a4374;
+  padding: 10px 10px;
+  margin-right: 40px;
+  background-color: #f2f4ff;
+}
+
+.suggestion-page main .feedback-container .feedback .content .tag {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: bold;
+  margin-top: 12px;
+  padding: 8px 16px;
+  color: #4661e6;
+  background-color: #f2f4ff;
+}
+
+.suggestion-page main .feedback-container .feedback .comment-preview {
+  font-weight: bold;
+}
 /*# sourceMappingURL=main.css.map */

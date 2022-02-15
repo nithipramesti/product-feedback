@@ -1,0 +1,46 @@
+:root {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  background-color: $color-grey-light;
+
+  .container {
+    width: $width-container;
+    margin: 94px auto;
+  }
+
+  .grid-12 {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 30px;
+  }
+
+  .flex {
+    display: flex;
+  }
+
+  .flex-space-between {
+    justify-content: space-between;
+  }
+
+  .flex-center-hrz {
+    align-items: center;
+  }
+
+  .flex-top-hrz {
+    align-items: flex-start;
+  }
+
+  .rounded-corner {
+    border-radius: 10px;
+  }
+}

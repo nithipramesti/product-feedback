@@ -37,7 +37,7 @@
       "id": 2,
       "title": "Add a dark theme option",
       "category": "feature",
-      "upvotes": 99,
+      "upvotes": 29,
       "status": "suggestion",
       "description": "It would help people with light sensitivities and who prefer dark mode.",
       "comments": [
@@ -104,11 +104,11 @@
       "id": 4,
       "title": "Add image/video upload to feedback",
       "category": "enhancement",
-      "upvotes": 51,
+      "upvotes": 99,
       "status": "suggestion",
       "description": "Images and screencasts can enhance comments on solutions.",
       "comments": [
-        { 
+        {
           "id": 6,
           "content": "Right now, there is no ability to add images while giving feedback which isn't ideal because I have to use another app to show what I mean",
           "user": {
@@ -173,7 +173,8 @@
       "category": "bug",
       "upvotes": 3,
       "status": "suggestion",
-      "description": "Challenge preview images are missing when you apply a filter."
+      "description": "Challenge preview images are missing when you apply a filter.",
+      "comments": []
     },
     {
       "id": 7,
