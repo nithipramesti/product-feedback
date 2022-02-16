@@ -6,7 +6,7 @@
       padding: 24px;
       padding-top: 62px;
       margin-bottom: 24px;
-      background-color: $color-primary-1;
+      background-size: cover;
     }
 
     .filter-container {
@@ -77,8 +77,14 @@
       background-color: $color-primary-3;
 
       h3 {
+        display: flex;
+        align-items: center;
         margin-right: 38px;
         margin-bottom: 0;
+
+        .suggestion-logo {
+          margin-right: 16px;
+        }
       }
 
       .sort-by-container {
@@ -94,40 +100,6 @@
           font-weight: bold;
           background-color: transparent;
           cursor: pointer;
-        }
-      }
-    }
-
-    .feedback-container {
-      .feedback {
-        padding: 28px 32px;
-        margin-bottom: 20px;
-
-        background-color: $color-white;
-
-        .upvotes {
-          font-size: 13px;
-          font-weight: bold;
-          color: $color-dark;
-          padding: 10px 10px;
-          margin-right: 40px;
-          background-color: $color-grey;
-        }
-
-        .content {
-          .tag {
-            display: inline-block;
-            font-size: 13px;
-            font-weight: bold;
-            margin-top: 12px;
-            padding: 8px 16px;
-            color: $color-primary-2;
-            background-color: $color-grey;
-          }
-        }
-
-        .comment-preview {
-          font-weight: bold;
         }
       }
     }

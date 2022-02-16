@@ -1,0 +1,44 @@
+.feedback {
+  padding: 28px 32px;
+  margin-bottom: 20px;
+
+  background-color: $color-white;
+
+  .upvotes {
+    text-align: center;
+    padding: 10px 10px;
+    margin-right: 40px;
+    background-color: $color-grey;
+
+    img {
+      margin-bottom: 4px;
+    }
+
+    p {
+      font-size: 13px;
+      font-weight: bold;
+      color: $color-dark;
+    }
+  }
+
+  .content {
+    .tag {
+      text-transform: capitalize;
+      display: inline-block;
+      font-size: 13px;
+      font-weight: bold;
+      margin-top: 12px;
+      padding: 8px 16px;
+      color: $color-primary-2;
+      background-color: $color-grey;
+    }
+  }
+
+  .comment-preview {
+    font-weight: bold;
+
+    img {
+      margin-right: 8px;
+    }
+  }
+}

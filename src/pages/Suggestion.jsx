@@ -1,5 +1,8 @@
 import database from "../database/data.json";
+
 import React, { useEffect, useState } from "react";
+
+import Feedback from "../components/Feedback";
 
 export const Suggestion = () => {
   //get initial data for suggestion feedback
@@ -92,21 +95,7 @@ export const Suggestion = () => {
   //render suggestion feedback
   const renderSuggestion = () => {
     return suggestionFeedback.map((val) => {
-      return (
-        <div className="feedback rounded-corner flex flex-space-between flex-center-hrz">
-          <div className="flex flex-top-hrz">
-            <div className="upvotes rounded-corner">{val.upvotes}</div>
-            <div className="content">
-              <h3>{val.title}</h3>
-              <p>{val.description}</p>
-              <p className="tag rounded-corner">{val.category}</p>
-            </div>
-          </div>
-          <div className="comment-preview">
-            <p>{val.totalComments}</p>
-          </div>
-        </div>
-      );
+      return <Feedback data={val} />;
     });
   };
 
@@ -131,7 +120,12 @@ export const Suggestion = () => {
   return (
     <div className="suggestion-page grid-12 container">
       <div className="side-bar">
-        <div className="title rounded-corner">
+        <div
+          className="title rounded-corner"
+          style={{
+            backgroundImage: `url(${process.env.PUBLIC_URL}/images/suggestions/desktop/background-header.png)`,
+          }}
+        >
           <h2 className="text-light">Frontend Mentor</h2>
           <p className="text-light">Feedback Board</p>
         </div>
@@ -172,8 +166,12 @@ export const Suggestion = () => {
         <div className="top-bar flex flex-space-between flex-center-hrz text-light rounded-corner">
           <div className="flex flex-center-hrz">
             <h3 className="text-light">
-              <span className="text-light">{suggestionFeedback.length}</span>{" "}
-              Suggestions
+              <img
+                className="suggestion-logo"
+                src={`${process.env.PUBLIC_URL}/images/suggestions/icon-suggestions.svg`}
+              />
+              <span className="text-light">{suggestionFeedback.length}</span>
+              &nbsp;Suggestions
             </h3>
             <div className="sort-by-container">
               <label htmlFor="sort-by">Sort by:</label>
