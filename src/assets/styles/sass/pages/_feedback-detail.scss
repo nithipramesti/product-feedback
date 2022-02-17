@@ -4,15 +4,6 @@
 
     .top-bar {
       margin-bottom: 24px;
-
-      .goback-link {
-        text-decoration: none;
-        color: $color-primary-2;
-
-        img {
-          margin-right: 10px;
-        }
-      }
     }
 
     .comments-container {
@@ -47,14 +38,28 @@
           border-radius: 50%;
         }
 
+        .comment-content {
+          font-size: 15px;
+        }
+
         .flex-right {
           .reply-comment-link {
+            font-size: 14px;
             font-weight: 600;
             text-decoration: none;
             color: $color-primary-2;
           }
-          p.comment-content {
-            font-size: 12px;
+        }
+
+        .add-reply-container {
+          margin-top: 24px;
+
+          textarea {
+            margin-right: 16px;
+          }
+
+          .btn {
+            white-space: nowrap;
           }
         }
 
@@ -87,16 +92,20 @@
       background-color: $color-white;
 
       textarea {
-        width: 100%;
-        padding: 16px 24px;
-        font-family: inherit;
-        font-size: 16px;
         margin-top: 24px;
         margin-bottom: 16px;
-        border: none;
-        background-color: $color-grey;
-        border-radius: 5px;
       }
+    }
+
+    textarea {
+      width: 100%;
+      padding: 16px 24px;
+      font-family: inherit;
+      font-size: 16px;
+      border: none;
+      background-color: $color-grey;
+      border-radius: 5px;
+      color: $color-dark;
     }
   }
 }

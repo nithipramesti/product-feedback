@@ -4,7 +4,12 @@ import Feedback from "../components/Feedback";
 
 export const FeedbackDetail = () => {
   const feedbackData = database.productRequests[1];
-  console.log(feedbackData);
+
+  //calculate total comments & replies in each feedback
+  feedbackData.totalComments = feedbackData.comments.length;
+  feedbackData.comments.forEach((comment) => {
+    feedbackData.totalComments += comment.replies.length;
+  });
 
   //render comments
   const renderComments = () => {
@@ -28,6 +33,18 @@ export const FeedbackDetail = () => {
               </div>
               <div className="comment-content">
                 <p>{val.content}</p>
+              </div>
+
+              <div className="add-reply-container hidden">
+                <div className="flex flex-space-between flex-top-hrz">
+                  <textarea
+                    name="comment"
+                    id="add-comment"
+                    rows="3"
+                    placeholder="Type your comment here"
+                  ></textarea>
+                  <button className="btn btn-primary">Post Reply</button>
+                </div>
               </div>
             </div>
           </div>
@@ -69,6 +86,17 @@ export const FeedbackDetail = () => {
                 {val.content}
               </p>
             </div>
+            <div className="add-reply-container hidden">
+              <div className="flex flex-space-between flex-top-hrz">
+                <textarea
+                  name="comment"
+                  id="add-comment"
+                  rows="3"
+                  placeholder="Type your comment here"
+                ></textarea>
+                <button className="btn btn-primary">Post Reply</button>
+              </div>
+            </div>
           </div>
         </div>
       );
@@ -79,7 +107,7 @@ export const FeedbackDetail = () => {
     <div className="feedback-detail-page grid-12 container">
       <div className="feedback-detail-container">
         <div className="top-bar flex flex-space-between flex-center-hrz">
-          <a className="goback-link" href="#">
+          <a className="go-back-link" href="#">
             <img
               className="suggestion-logo"
               src={`${process.env.PUBLIC_URL}/images/shared/icon-arrow-left.svg`}
@@ -92,7 +120,7 @@ export const FeedbackDetail = () => {
         <Feedback data={feedbackData} />
 
         <div className="comments-container rounded-corner">
-          <h3>4 Comments</h3>
+          <h3>{feedbackData.totalComments} Comments</h3>
           {renderComments()}
         </div>
 

@@ -1,0 +1,62 @@
+.add-feedback-page {
+  .add-feedback-container {
+    grid-column: 4/10;
+
+    .go-back-link {
+      margin-bottom: 68px;
+    }
+
+    .add-feedback-card {
+      background-color: $color-white;
+      padding: 40px 42px;
+      position: relative;
+
+      .add-icon {
+        position: absolute;
+        width: 56px;
+        height: 56px;
+
+        top: -28px;
+      }
+
+      h2 {
+        margin: 24px 0 40px 0;
+      }
+
+      form {
+        .input-container {
+          margin-bottom: 28px;
+
+          label {
+            font-size: 14px;
+
+            .label-title {
+              font-weight: bold;
+              margin-bottom: 2px;
+            }
+
+            .label-subtitle {
+              margin-bottom: 16px;
+            }
+          }
+          .input-field {
+            width: 100%;
+            padding: 14px 24px;
+            border: none;
+            font-family: inherit;
+            font-size: inherit;
+            color: $color-dark;
+            background-color: $color-grey;
+            border-radius: 5px;
+          }
+        }
+
+        .btn-container {
+          .btn-dark {
+            margin-right: 16px;
+          }
+        }
+      }
+    }
+  }
+}

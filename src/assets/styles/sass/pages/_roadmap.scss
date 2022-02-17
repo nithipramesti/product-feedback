@@ -1,0 +1,22 @@
+.roadmap-page {
+  .top-bar {
+    grid-column: span 12;
+    padding: 14px 16px;
+    margin-bottom: 48px;
+    background-color: $color-primary-3;
+
+    h3 {
+      margin-right: 38px;
+      margin-bottom: 0;
+    }
+  }
+
+  .roadmap-status-container {
+    grid-column: span 4;
+
+    .feedback-card {
+      background-color: $color-white;
+      padding: 32px;
+    }
+  }
+}

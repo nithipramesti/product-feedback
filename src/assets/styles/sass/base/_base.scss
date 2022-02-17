@@ -32,6 +32,10 @@ body {
     justify-content: space-between;
   }
 
+  .flex-justify-end {
+    justify-content: end;
+  }
+
   .flex-center-hrz {
     align-items: center;
   }
@@ -42,5 +46,9 @@ body {
 
   .rounded-corner {
     border-radius: 10px;
+  }
+
+  .hidden {
+    display: none;
   }
 }

@@ -4,9 +4,11 @@
 @import "base/typography";
 @import "base/utilities";
 
-@import "components/button";
 @import "components/feedback";
+@import "components/button";
+@import "components/link";
 
 @import "pages/roadmap";
 @import "pages/feedback-detail";
+@import "pages/add-feedback";
 @import "pages/suggestion";
