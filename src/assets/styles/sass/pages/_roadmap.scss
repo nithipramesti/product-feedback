@@ -14,9 +14,97 @@
   .roadmap-status-container {
     grid-column: span 4;
 
+    .status-title {
+      margin-bottom: 4px;
+    }
+
+    .status-subtitle {
+      margin-bottom: 32px;
+    }
+
     .feedback-card {
       background-color: $color-white;
       padding: 32px;
+      margin-bottom: 24px;
+      border-top: 8px solid $color-white;
+
+      .status {
+        margin-bottom: 8px;
+        text-transform: capitalize;
+
+        .status-color {
+          content: "";
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          margin-right: 16px;
+        }
+      }
+
+      .content {
+        margin-bottom: 16px;
+      }
+
+      .tag {
+        text-transform: capitalize;
+        display: inline-block;
+        font-size: 13px;
+        font-weight: bold;
+        margin-top: 12px;
+        padding: 8px 16px;
+        color: $color-primary-2;
+        background-color: $color-grey;
+
+        margin-bottom: 16px;
+      }
+
+      .upvotes {
+        padding: 10px 10px;
+        background-color: $color-grey;
+
+        img {
+          margin-right: 8px;
+        }
+
+        p {
+          font-size: 13px;
+          font-weight: bold;
+          color: $color-dark;
+          margin-bottom: 0;
+        }
+      }
+
+      .comment-preview {
+        font-weight: bold;
+
+        img {
+          margin-right: 8px;
+        }
+      }
+    }
+
+    .planned {
+      border-top-color: $color-orange;
+
+      .status-color {
+        background-color: $color-orange;
+      }
+    }
+
+    .in-progress {
+      border-top-color: $color-primary-1;
+
+      .status-color {
+        background-color: $color-primary-1;
+      }
+    }
+
+    .live {
+      border-top-color: $color-blue;
+
+      .status-color {
+        background-color: $color-blue;
+      }
     }
   }
 }

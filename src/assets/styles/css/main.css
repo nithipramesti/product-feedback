@@ -187,9 +187,96 @@ p {
   grid-column: span 4;
 }
 
+.roadmap-page .roadmap-status-container .status-title {
+  margin-bottom: 4px;
+}
+
+.roadmap-page .roadmap-status-container .status-subtitle {
+  margin-bottom: 32px;
+}
+
 .roadmap-page .roadmap-status-container .feedback-card {
   background-color: #ffffff;
   padding: 32px;
+  margin-bottom: 24px;
+  border-top: 8px solid #ffffff;
+}
+
+.roadmap-page .roadmap-status-container .feedback-card .status {
+  margin-bottom: 8px;
+  text-transform: capitalize;
+}
+
+.roadmap-page .roadmap-status-container .feedback-card .status .status-color {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+
+.roadmap-page .roadmap-status-container .feedback-card .content {
+  margin-bottom: 16px;
+}
+
+.roadmap-page .roadmap-status-container .feedback-card .tag {
+  text-transform: capitalize;
+  display: inline-block;
+  font-size: 13px;
+  font-weight: bold;
+  margin-top: 12px;
+  padding: 8px 16px;
+  color: #4661e6;
+  background-color: #f2f4ff;
+  margin-bottom: 16px;
+}
+
+.roadmap-page .roadmap-status-container .feedback-card .upvotes {
+  padding: 10px 10px;
+  background-color: #f2f4ff;
+}
+
+.roadmap-page .roadmap-status-container .feedback-card .upvotes img {
+  margin-right: 8px;
+}
+
+.roadmap-page .roadmap-status-container .feedback-card .upvotes p {
+  font-size: 13px;
+  font-weight: bold;
+  color: #3a4374;
+  margin-bottom: 0;
+}
+
+.roadmap-page .roadmap-status-container .feedback-card .comment-preview {
+  font-weight: bold;
+}
+
+.roadmap-page .roadmap-status-container .feedback-card .comment-preview img {
+  margin-right: 8px;
+}
+
+.roadmap-page .roadmap-status-container .planned {
+  border-top-color: #f49f85;
+}
+
+.roadmap-page .roadmap-status-container .planned .status-color {
+  background-color: #f49f85;
+}
+
+.roadmap-page .roadmap-status-container .in-progress {
+  border-top-color: #ad1fea;
+}
+
+.roadmap-page .roadmap-status-container .in-progress .status-color {
+  background-color: #ad1fea;
+}
+
+.roadmap-page .roadmap-status-container .live {
+  border-top-color: #62bcfa;
+}
+
+.roadmap-page .roadmap-status-container .live .status-color {
+  background-color: #62bcfa;
 }
 
 .feedback-detail-page .feedback-detail-container {
