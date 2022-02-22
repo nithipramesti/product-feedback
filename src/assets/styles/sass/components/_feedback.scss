@@ -22,6 +22,15 @@
   }
 
   .content {
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
     .tag {
       text-transform: capitalize;
       display: inline-block;

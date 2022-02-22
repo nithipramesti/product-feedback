@@ -135,7 +135,7 @@ export const Suggestion = () => {
         <div className="roadmap-container rounded-corner">
           <div className="flex flex-space-between">
             <h3>Roadmap</h3>
-            <a href="#">View</a>
+            <a href="/roadmap">View</a>
           </div>
           <div className="roadmap-status">
             <div className="status flex" id="planned">
@@ -188,7 +188,9 @@ export const Suggestion = () => {
               </select>
             </div>
           </div>
-          <button className="btn btn-primary">+Add Feedback</button>
+          <a href="/add-feedback" className="btn btn-primary">
+            +Add Feedback
+          </a>
         </div>
         <div className="feedback-container">{renderSuggestion()}</div>
       </main>

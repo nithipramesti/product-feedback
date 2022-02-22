@@ -1,5 +1,7 @@
 import React from "react";
 
+import { Link } from "react-router-dom";
+
 export const Feedback = (props) => {
   return (
     <div className="feedback rounded-corner flex flex-space-between flex-center-hrz">
@@ -12,7 +14,9 @@ export const Feedback = (props) => {
           <p>{props.data.upvotes}</p>
         </div>
         <div className="content">
-          <h3>{props.data.title}</h3>
+          <a href={`/feedback-detail/${props.data.id}`}>
+            <h3>{props.data.title}</h3>
+          </a>
           <p>{props.data.description}</p>
           <p className="tag rounded-corner">{props.data.category}</p>
         </div>

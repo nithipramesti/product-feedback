@@ -1,9 +1,16 @@
 import database from "../database/data.json";
+
 import React from "react";
 import Feedback from "../components/Feedback";
+import { useParams } from "react-router-dom";
 
 export const FeedbackDetail = () => {
-  const feedbackData = database.productRequests[1];
+  //get route params value
+  const params = useParams();
+
+  const feedbackData = database.productRequests.find(
+    (el) => el.id === Number(params.id_feedback)
+  );
 
   //calculate total comments & replies in each feedback
   feedbackData.totalComments = feedbackData.comments.length;
@@ -16,7 +23,7 @@ export const FeedbackDetail = () => {
     return feedbackData.comments.map((val) => {
       return (
         <div className="comment">
-          <div className="flex flex-space-between">
+          <div className="flex">
             <img
               className="user-img"
               src={process.env.PUBLIC_URL + val.user.image}
@@ -107,14 +114,22 @@ export const FeedbackDetail = () => {
     <div className="feedback-detail-page grid-12 container">
       <div className="feedback-detail-container">
         <div className="top-bar flex flex-space-between flex-center-hrz">
-          <a className="go-back-link" href="#">
+          <a
+            className="go-back-link"
+            href={feedbackData.status === "suggestion" ? "/" : "/roadmap"}
+          >
             <img
               className="suggestion-logo"
               src={`${process.env.PUBLIC_URL}/images/shared/icon-arrow-left.svg`}
             />
             Go Back
           </a>
-          <button className="btn btn-primary">Edit Feedback</button>
+          <a
+            className="btn btn-primary"
+            href={`/edit-feedback/${feedbackData.id}`}
+          >
+            Edit Feedback
+          </a>
         </div>
 
         <Feedback data={feedbackData} />
